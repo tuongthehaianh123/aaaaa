@@ -1,0 +1,22 @@
+aaaaa22222222222222File handling is easy.
+File handling is easy.
+ccccccc 33 33333333333
+haianah 22 3232323232
+qqqq 33 33333333
+bohai 22 222222222
+aaa 21 1111111111
+
+
+fmt.Println("Please output the student ID of the student you are looking for:")
+	var id string
+	fmt.Scanln(&id)
+	for d := 0; d <= len(list1)-1; d++ {
+	
+		if list1[d].StuId==id{
+			fmt.Println(list1[d].StuId + " " + list1[d].StuName + " " + list1[d].StuAge + " " + list1[d].Stuphonenumber + " " + list1[d].StuGrade)
+			break
+		}
+		if d==len(list1)-1{
+			fmt.Println("not found in the students list")
+		}
+	}
